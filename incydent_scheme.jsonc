@@ -1,0 +1,81 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",  
+            "url": "https://smart-soc.com/wp-content/uploads/2022/03/logobright-2.png",
+            "altText": "Incident",
+            "size": "large",
+            "style":"person",
+            "horizontalAlignment": "right"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                  "type": "Column",
+                  "width": "auto",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gPzJ-ATPhxZ9FjFlqb_jvTD4E4aZIyUNKw&usqp=CAU",
+                      "altText": "Incident",
+                      "size": "small",
+                      "style":"person"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "items": [
+                    {
+                      "type": "TextBlock",
+                      "text": "Incident!",
+                      "weight": "bolder",
+                      "size":"extraLarge",
+                      "wrap": true
+                    }
+                  ]
+                }
+            ]
+        },
+        {
+            "type":"Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Details about an Incident:",
+                    "weight":"lighter"
+                },
+                {
+                    "type": "FactSet",
+                    "facts": [
+                      {
+                        "title": "Incident Name:",
+                        "value": "???"
+                      },
+                      {
+                        "title": "Severity:",
+                        "value": "???"
+                      },
+                      {
+                        "title": "Incident Name:",
+                        "value": "???"
+                      },
+                      {
+                        "title": "Risky user:",
+                        "value": "???"
+                      }
+                    
+                            ]
+                }
+                    ]
+             
+        }
+    ]
+
+
+
+}
