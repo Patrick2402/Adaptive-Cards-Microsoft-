@@ -2,14 +2,7 @@
     "type": "AdaptiveCard",
     "version": "1.0",
     "body": [
-        {
-            "type": "Image",  
-            "url": "https://smart-soc.com/wp-content/uploads/2022/03/logobright-2.png",
-            "altText": "Incident",
-            "size": "large",
-            "style":"person",
-            "horizontalAlignment": "right"
-        },
+   
         {
             "type": "ColumnSet",
             "columns": [
