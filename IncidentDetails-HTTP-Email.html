@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<style>
+
+.container{
+    display: block;
+    width: 100%;
+    color: black;
+    min-height: 100px;   
+}
+.header-Low{
+    width: 100%;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+
+}
+.header-Medium{
+    width: 100%;
+    background-color: orange;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+
+}
+.header-infos{
+    width: 100%;
+    padding: 10px;
+}
+.header-High{
+    width: 100%;
+    background-color: rgb(190, 3, 3);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    overflow:auto;
+}
+.main-infos{
+    width: 100%;
+    border-radius: 20px;
+}
+.info-row{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    min-height: 10px;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: solid rgb(3, 3, 141) 2px;
+    font-size: 13px;
+    overflow: auto;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="https://smart-soc.com/wp-content/uploads/elementor/thumbs/logobright-2-pmj0e1lofmmhsov62ebqtakrgcumfyzm4zpedd74ng.png" alt="Trulli" width="auto">
+    <div class="header-High">
+        <div class="header-infos">Title: @{triggerBody()?['object']?['properties']?['title']}</div>
+        <div class="header-infos">Severity: @{triggerBody()?['object']?['properties']?['severity']}</div>
+    </div>
+    <div class="main-infos">
+        <div class="info-row"><b>Incident number: </b>@{triggerBody()?['object']?['properties']?['incidentNumber']}</div> 
+        <div class="info-row"><b>Title: </b>@{triggerBody()?['object']?['properties']?['title']}</div> 
+        <div class="info-row"><b>Severity: </b>@{triggerBody()?['object']?['properties']?['severity']}</div>
+        <div class="info-row"><b>Time generated - UTC: </b>@{triggerBody()?['object']?['properties']?['createdTimeUtc']}</div>
+        <div class="info-row"><b>Status:</b>@{triggerBody()?['object']?['properties']?['status']}</div>
+        <div class="info-row"><b>Incident Link:</b><a href="https://portal.azure.com/#asset/Microsoft_Azure_Security_Insights/Incident@{triggerBody()?['object']?['id']}">View incydent</a></div>
+        
+    </div>
+</div>
+  </body>
+  </html>
